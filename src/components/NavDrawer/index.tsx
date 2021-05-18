@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import { Container, List } from './styles';
 import { FaPlus, FaMinus } from "react-icons/fa";
 
@@ -7,7 +8,7 @@ interface NavDrawerProps {
   links: {
     title: string
     icon?: any
-    link?: string
+    link: string
   }[]
 }
 
@@ -23,11 +24,11 @@ const NavDrawer: React.FC<NavDrawerProps> = ({ links }) => {
           <ul>
             {
               links?.map(({ icon, title, link }) => (
-                <li>
-                  <a href={"#" || link}>
+                <li key={title}>
+                  <Link to={link}>
                     <span className="icon">{icon}</span>
                     <span className="title">{title}</span>
-                  </a>
+                  </Link>
                 </li>
               ))
             }

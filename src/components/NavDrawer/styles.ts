@@ -7,6 +7,9 @@ interface ListProps {
 export const Container = styled.div`
   position: absolute;
   left: 0;
+  top: calc(50% - 11rem);
+  /* this zindex is for framer motion */
+  z-index: 10;
 
   .navigation {
     position: relative;
