@@ -7,8 +7,9 @@ export default createGlobalStyle`
     --gray: #EEE;
     --text-black: #151812;
     --text-white: #EEE;
-    --primary: orange;
-    --secondary: #F80;
+    --primary: #F80;
+    --secondary: orange;
+    --shadow: #808080;
   }
 
   * {

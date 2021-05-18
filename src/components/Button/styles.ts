@@ -13,4 +13,5 @@ export const Container = styled.button<ContainerProps>`
   padding: 1rem 1.5rem;
   
   background-color: ${props => props.tranparency === false ? 'var(--primary)' : 'transparent'};
+  border-radius: 30px;
 `;

@@ -10,6 +10,8 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.main`
+  width: 30rem;
+  
   > h1 {
     margin: 2rem 0;
     font-size: 2.2rem;
@@ -23,5 +25,7 @@ export const Content = styled.main`
 `
 
 export const Media = styled.div`
-
+  > img {
+    height: 70vh;
+  }
 `
