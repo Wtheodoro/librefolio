@@ -20,7 +20,7 @@ const PortifolioCard: React.FC<PortifolioCardProps> = ({ children, title, img,
           <div className="content">
             <h2>{title}</h2>
             <p>{children}</p>
-            <a href={link} target="_blank">{buttonLabel}</a>
+            <a href={link} target="_blank" rel="noreferrer">{buttonLabel}</a>
           </div>
         </div>
         <div className="face face2">

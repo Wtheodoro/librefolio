@@ -1,5 +1,3 @@
-import React from "react";
-import { FaHome, FaAddressCard, FaGraduationCap, FaCode, FaDog } from "react-icons/fa";
 import { BrowserRouter } from "react-router-dom"
 import NavDrawer from "./components/NavDrawer";
 import Routes from './routes'

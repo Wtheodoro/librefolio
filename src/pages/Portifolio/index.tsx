@@ -1,7 +1,7 @@
 import React from 'react';
 import { pageVariants, pageTransition } from '../../assets/framerMotion'
 import Divider from '../../components/Divider';
-import PortifolioCard from '../../components/RotatingText/PortifolioCard';
+import PortifolioCard from '../../components/Cards/PortifolioCard';
 import Title from '../../components/Title';
 import { Container } from './styles';
 

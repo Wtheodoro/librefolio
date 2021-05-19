@@ -31,7 +31,10 @@ const Home: React.FC = () => {
 
 
         <Button tranparency>
-          <a href="https://github.com/Wtheodoro" target="_blank"><FaGithub/> Github</a>
+          <a href="https://github.com/Wtheodoro" 
+            target="_blank"
+            rel="noreferrer"
+          ><FaGithub/> Github</a>
         </Button>
 
       </Content>
