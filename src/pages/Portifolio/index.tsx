@@ -36,7 +36,7 @@ const Portifolio: React.FC = () => {
           img="https://github.com/Wtheodoro/my_team_page/blob/main/gif/desktop.gif?raw=true"
         >
           A team page made with HTML, CSS and Javascript. It is product of devChallenges.io
-        </PortifolioCard>
+        </PortifolioCard>       
       </div>
     </Container>
   )

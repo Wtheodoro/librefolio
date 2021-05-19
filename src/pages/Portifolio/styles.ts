@@ -7,6 +7,7 @@ export const Container = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 3rem;
 
   > h1 {
     margin: 1.5rem 0;
