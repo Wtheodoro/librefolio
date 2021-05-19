@@ -9,7 +9,6 @@ const Form: React.FC = () => {
   const { register } = useForm()
 
   function sendEmail(data: any) {
-    console.log(data)
     data.preventDefault();
 
     emailjs.sendForm('service_70kfwn3', 'template_td3ojc8', data.target, 'user_CREeh4kObIP2aMSX3VN6n')
