@@ -4,9 +4,12 @@ import RotatingText from '../../components/RotatingText';
 import Title from '../../components/Title';
 import { pageVariants, pageTransition } from '../../assets/framerMotion'
 import { Container, Content, Media } from './styles';
+import { FaGithub } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const rotatingTextItems = ['Web developer', 'React developer', 'Typescript developer', 'UI Designer']
+
   return (
     <Container
       initial="initial"
@@ -21,8 +24,16 @@ const Home: React.FC = () => {
           I'm a <RotatingText items={rotatingTextItems}/><br/>
           Based in Campinas-SP
         </h1>
-        <Button>My Portifolio</Button>
-        <Button tranparency={true}>Read More</Button>
+
+        <Button>
+          <Link to="/portifolio">My Portifolio</Link>
+        </Button>
+
+
+        <Button tranparency>
+          <a href="https://github.com/Wtheodoro" target="_blank"><FaGithub/> Github</a>
+        </Button>
+
       </Content>
 
       <Media>

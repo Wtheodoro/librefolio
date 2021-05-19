@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 
 interface ButtonProps {
-  children: string
+  children: any
   tranparency?: boolean
 }
 

@@ -1,34 +1,61 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { Container, List } from './styles';
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaPlus, FaMinus, FaAddressCard, FaCode, FaDog, FaGraduationCap, FaHome } from "react-icons/fa";
 
-
-interface NavDrawerProps {
-  links: {
-    title: string
-    icon?: any
-    link: string
-  }[]
-}
-
-const NavDrawer: React.FC<NavDrawerProps> = ({ links }) => {
+const NavDrawer: React.FC = () => {
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false)
   const activeMenu = () => {
     setIsMenuActive(!isMenuActive)
   }
+
+  const navLinks = [
+    {
+      title: 'Home',
+      icon: <FaHome />,
+      link: "/"
+    },
+    {
+      title: 'About',
+      icon: <FaAddressCard />,
+      link: "/about"
+    },
+    {
+      title: 'Resume',
+      icon: <FaGraduationCap />,
+      link: "/resume"
+    },
+    {
+      title: 'Portifolio',
+      icon: <FaCode />,
+      link: "/portifolio"
+    },
+    {
+      title: 'Contact',
+      icon: <FaDog />,
+      link: "/contact"
+    },
+  ]
+
+  
   return (
     <Container>
       <div className="navigation">
         <List menuActive={isMenuActive}>
           <ul>
             {
-              links?.map(({ icon, title, link }) => (
+              navLinks?.map(({ icon, title, link }) => (
                 <li key={title}>
-                  <Link to={link}>
+                  <NavLink 
+                    to={link}
+                    activeStyle={{
+                      color: "var(--gray)"
+                    }}  
+                    exact
+                  >
                     <span className="icon">{icon}</span>
                     <span className="title">{title}</span>
-                  </Link>
+                  </NavLink>
                 </li>
               ))
             }
