@@ -16,7 +16,7 @@ const Resume: React.FC = () => {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Title>Resume</Title>
+      <Title>RESUME</Title>
       <h1>Education & Experience</h1>
       <Divider />
 

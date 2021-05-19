@@ -23,7 +23,7 @@ export const Container = styled.div`
     height: 2.5rem;
     background-color: #080808;
     cursor: pointer;
-    border: 5px solid #BEE4F9;
+    border: 5px solid #FFF;
     border-radius: 50%;
     display: flex;
     align-items: center;

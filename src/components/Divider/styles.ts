@@ -10,6 +10,7 @@ export const Container = styled.div`
     width: 5rem;
     height: 5px;
     background-color: var(--primary);
+    border-radius: 15px;
   }
 
   .point {
