@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillCard from '../../components/SkillCard';
+import SkillCard from '../../components/Cards/SkillCard';
 import Title from '../../components/Title';
 import { pageVariants, pageTransition } from '../../assets/framerMotion'
 import { Container, Media, Content, Segment } from './styles';
