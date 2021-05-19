@@ -7,6 +7,8 @@ This repository is for all developers who want to own a personal website portifo
 ![GIF](https://github.com/Wtheodoro/librefolio/blob/main/public/gif/desktopPreview.gif?raw=true)
 
 **Any bug? Open a issue.**
+**There is not a mobile version YET**
+
 ## `Builded with`
 - React
 - Typescript
