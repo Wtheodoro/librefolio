@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion'
 
 export const Container = styled(motion.div)`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,10 +20,6 @@ export const Content = styled.div`
   width: 40%;
   margin-left: 2%;
 
-  > h1 {
-    margin: 1rem 0 2rem 0;
-  }
-
   > p {
     margin-bottom: 2rem;
   }
@@ -36,4 +32,11 @@ export const Content = styled.div`
       margin: 0.5rem;
     }
   }
+`
+
+export const Segment = styled.div`
+  width: 5rem;
+  height: 5px;
+  background-color: var(--primary);
+  margin: 1.2rem 0 1rem .7rem;
 `

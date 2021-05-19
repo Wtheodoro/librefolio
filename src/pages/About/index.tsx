@@ -2,7 +2,7 @@ import React from 'react';
 import SkillCard from '../../components/SkillCard';
 import Title from '../../components/Title';
 import { pageVariants, pageTransition } from '../../assets/framerMotion'
-import { Container, Media, Content } from './styles';
+import { Container, Media, Content, Segment } from './styles';
 
 const About: React.FC = () => {
   return (
@@ -20,6 +20,7 @@ const About: React.FC = () => {
         <Content>
           <Title>ABOUT ME</Title>
           <h1>Hello, I am Walison Teodoro.</h1>
+          <Segment />
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quis ex recusandae ad rem accusamus temporibus perspiciatis non quas dolorum accusantium adipisci, iusto mollitia deserunt, quos assumenda, obcaecati eveniet impedit.</p>
           <div className="all-skills">
             <SkillCard />
