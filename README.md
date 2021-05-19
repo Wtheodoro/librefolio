@@ -4,7 +4,7 @@ This repository is for all developers who want to own a personal website portifo
 
 [page](https://librefolio.netlify.app/).
 
-![GIF](https://github.com/Wtheodoro/librefolio/blob/main/public/Gif/desktopPreview.gif)
+![GIF](https://github.com/Wtheodoro/librefolio/blob/main/public/gif/desktopPreview.gif?raw=true)
 
 **Any bug? Open a issue.**
 ## `Builded with`
