@@ -17,43 +17,53 @@ const Resume: React.FC = () => {
       transition={pageTransition}
     >
       <Title>RESUME</Title>
-      <h1>Education & Experience</h1>
+      <h1>Education</h1>
       <Divider />
 
       <div className="timelines">
         <div className="lef">
           <TimeLineTitle>Education</TimeLineTitle>
+
           <TimeLineCard 
-            title="PUC-Campinas"
-            subtitle="Civil Enginnering"
+            title="Sotware Development"
+            subtitle="Analysis and software development"
             icon={<RiVipCrown2Line/>}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam libero ex sequi tempora vitae unde, culpa, incidunt
+            Graduate student on Analysis and software development in Descomplica Pós with end expectedon january 2022
+          </TimeLineCard>
+          <TimeLineCard 
+            title="Sotware Development"
+            subtitle="Quality powders, test and software development"
+            icon={<RiVipCrown2Line/>}
+          >
+            Graduate student on Quality powders, test and software development in Descomplica Pós with end expectedon december 2021
           </TimeLineCard>
           <TimeLineCard 
             title="PUC-Campinas"
             subtitle="Civil Enginnering"
             icon={<RiVipCrown2Line/>}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam libero ex sequi tempora vitae unde, culpa, incidunt
+            B.Sc. in Engeneering.
+            Graduated in civil engineering from PUC-Campinas in december 2020
           </TimeLineCard>
+          
         </div>
 
         <div className="right">
-          <TimeLineTitle>Experience</TimeLineTitle>
+          <TimeLineTitle>Courses</TimeLineTitle>
           <TimeLineCard 
-            title="PUC-Campinas"
-            subtitle="Civil Enginnering"
+            title="Full stack development"
+            subtitle="Avanced React by Willian Justen and Guilherme Louro"
             icon={<RiVipCrown2Line/>}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam libero ex sequi tempora vitae unde, culpa, incidunt
+            Focused on good practices, the course develops an E-commerce in NextJs, integration with graphQL, strapi, storybook and more.
           </TimeLineCard>
           <TimeLineCard 
-            title="PUC-Campinas"
-            subtitle="Civil Enginnering"
+            title="Front-end development"
+            subtitle="Campinas Tech Talents"
             icon={<RiVipCrown2Line/>}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam libero ex sequi tempora vitae unde, culpa, incidunt
+            A bootcamp lasting 168 hours focused on front-end with React, Redux, API, Saga, tests and more.
           </TimeLineCard>
         </div>
         

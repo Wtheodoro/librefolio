@@ -17,8 +17,8 @@ export const Container = styled.div`
     }
 
     > svg {
-      margin: 1rem 0 0 .9rem;
-      font-size: 30px;
+      margin: .9rem 0 0 .7rem;
+      font-size: 40px;
     }
   }
 

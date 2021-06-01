@@ -1,18 +1,23 @@
 import React from 'react';
 import { Container } from './styles';
-import { CgWebsite } from 'react-icons/cg'
 
-const SkillCard: React.FC = () => {
+interface SkillCardProps {
+  children?: string
+  title?: string
+  icon?: React.ReactNode
+}
+
+const SkillCard: React.FC<SkillCardProps> = ({ children, title, icon }) => {
   return (
     <Container>
       <div className="icon">
         <div className="circle"/>
-        <CgWebsite />
+        {icon}
       </div>
       <div className="skill">
-        <h2>Front-end developer</h2>
+        <h2>{title}</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae eveniet repel
+          {children}
         </p>
       </div>
 
