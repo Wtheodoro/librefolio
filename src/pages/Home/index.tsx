@@ -6,6 +6,7 @@ import { pageVariants, pageTransition } from '../../assets/framerMotion'
 import { Container, Content, Media } from './styles';
 import { FaGithub } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import MediaMatch from '../../components/MediaMatch';
 
 const Home: React.FC = () => {
   const rotatingTextItems = ['Web developer', 'React developer', 'Typescript developer', 'UI Designer']
@@ -39,9 +40,11 @@ const Home: React.FC = () => {
 
       </Content>
 
-      <Media>
-        <img src="./images/Obama.png" alt="" />
-      </Media>
+      <MediaMatch hideOnMobileLessIpad>
+        <Media>
+          <img src="./images/Obama.png" alt="" />
+        </Media>
+      </MediaMatch>
     </Container>
   )
 }

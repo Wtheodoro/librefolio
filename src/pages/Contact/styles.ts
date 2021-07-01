@@ -7,6 +7,10 @@ export const Container = styled(motion.div)`
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+
+  @media(max-width:425px) {
+    padding-bottom: 4rem;
+  }
 `;
 
 export const Media = styled.div`
@@ -36,6 +40,10 @@ export const Content = styled.div`
     > div {
       margin: 0.5rem;
     }
+  }
+
+  @media(max-width:425px) {
+    width: 100%;
   }
 `
 

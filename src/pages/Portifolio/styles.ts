@@ -19,4 +19,12 @@ export const Container = styled(motion.div)`
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
+
+  @media(max-width:425px) {
+    padding-bottom: 4rem;
+    .views {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 4rem;
+    }
+  }
 `;

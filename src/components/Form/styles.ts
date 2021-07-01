@@ -7,10 +7,24 @@ export const Container = styled.div`
 
     div + div {
       margin-left: 1.5rem;
+
+      @media(max-width:425px) {
+        margin-left: 0;
+      }
     }
   }
 
   button {
     margin-top: 2rem;
+  }
+
+  @media(max-width:425px) {
+    .top {
+      flex-direction: column;
+    }
+
+    div + div {
+      margin-left: 0;
+    }
   }
 `;

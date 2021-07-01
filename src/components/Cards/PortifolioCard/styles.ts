@@ -62,4 +62,8 @@ export const Container = styled.div`
   &:hover .face.face2 {
     display: none;
   }
+
+  @media(max-width: 375) {
+    width: 25rem;
+  }
 `;

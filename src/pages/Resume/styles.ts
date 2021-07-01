@@ -16,4 +16,11 @@ export const Container = styled(motion.div)`
   .timelines {
     display: flex;
   }
+
+  @media(max-width:425px) {
+    padding-bottom: 4rem;
+    .timelines {
+      flex-direction: column;
+    }
+  }
 `;

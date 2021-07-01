@@ -5,11 +5,18 @@ interface ListProps {
 }
 
 export const Container = styled.div`
-  position: absolute;
+  position: fixed;
   left: 0;
   top: calc(50% - 11rem);
   /* this zindex is for framer motion */
   z-index: 10;
+
+  @media(max-width: 425px) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 0;
+  }
 
   .navigation {
     position: relative;
@@ -98,5 +105,17 @@ export const List = styled.div<ListProps>`
     line-height: 3.8rem;
     white-space: nowrap;
     margin-left: 1rem;
+  }
+
+  @media(max-width: 425px) {
+    height: 3rem;
+    min-height: 0;
+    width: 22rem;
+    border-radius: 10px 10px 0 0;
+
+    ul {
+      display: flex;
+      padding: 0;
+    }
   }
 `

@@ -6,6 +6,7 @@ import { Container, Media, Content, Segment } from './styles';
 import { CgWebsite } from 'react-icons/cg'
 import { RiReactjsLine } from 'react-icons/ri'
 import { SiTypescript, SiRedux, SiHtml5, SiCss3 } from 'react-icons/si'
+import MediaMatch from '../../components/MediaMatch';
 
 
 const About: React.FC = () => {
@@ -49,10 +50,12 @@ const About: React.FC = () => {
         variants={pageVariants}
         transition={pageTransition}
       >
-        <Media>
-          <img src="./images/chris-brown.jpg" alt="Chris brown sentado a pampa" />
-        </Media>
-
+        <MediaMatch hideOnMobileLessIpad>
+          <Media>
+            <img src="./images/chris-brown.jpg" alt="Chris brown sentado a pampa" />
+          </Media>
+        </MediaMatch>
+        
         <Content>
           <Title>ABOUT ME</Title>
           <h1>Hello, I am Walison Teodoro.</h1>

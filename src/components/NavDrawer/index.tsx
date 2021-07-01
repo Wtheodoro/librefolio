@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import { Container, List } from './styles';
 import { FaPlus, FaMinus, FaAddressCard, FaCode, FaDog, FaGraduationCap, FaHome } from "react-icons/fa";
+import MediaMatch from '../MediaMatch';
 
 const NavDrawer: React.FC = () => {
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false)
@@ -54,7 +55,9 @@ const NavDrawer: React.FC = () => {
                     exact
                   >
                     <span className="icon">{icon}</span>
-                    <span className="title">{title}</span>
+                    <MediaMatch hideOnMobileLessIpad>
+                      <span className="title">{title}</span>
+                    </MediaMatch>
                   </NavLink>
                 </li>
               ))
@@ -62,15 +65,19 @@ const NavDrawer: React.FC = () => {
           </ul>
         </List>
         
-        <div className="toggle" onClick={activeMenu}>
-          {
-            isMenuActive === false 
-            ?
-            <FaPlus />
-            :
-            <FaMinus />
-          }
-        </div>
+        <MediaMatch hideOnMobile>
+          <div className="toggle" onClick={activeMenu}>
+            {
+              isMenuActive === false 
+              ?
+              <FaPlus />
+              :
+              <FaMinus />
+            }
+          </div>
+        </MediaMatch>
+
+        
       </div>
     </Container>
   )
